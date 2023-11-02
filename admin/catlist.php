@@ -9,6 +9,50 @@ if (isset($_GET['delcat'])) {
 	$delcat = $cat->delcatById($id);
 }
 ?>
+<style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .block {
+        margin: 20px;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .data th, .data td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .data th {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .data tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .data tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .data a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .data a:hover {
+        text-decoration: underline;
+    }
+</style>
+
 
         <div class="grid_10">
             <div class="box round first grid">

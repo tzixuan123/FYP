@@ -42,6 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['wlist'])) {
 
 <style>
 	.mybutton{width: 100px;float: left;margin-right: 50px;}
+	.product-desc p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+        color: #555;
+    }
 
 </style>
 

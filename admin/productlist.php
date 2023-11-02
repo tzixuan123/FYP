@@ -15,6 +15,54 @@ if (isset($_GET['delpro'])) {
 	$delpro = $pd->delProById($id);
 }
 ?>
+<style>
+    table.data {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table.data th, table.data td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    table.data th {
+        background-color: purple;
+        font-weight: bold;
+    }
+
+    table.data tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table.data tr:hover {
+        background-color: #e0e0e0;
+    }
+
+    table.data img {
+        max-width: 60px;
+        max-height: 60px;
+        border: 1px solid #ddd;
+    }
+
+    table.data a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    table.data a:hover {
+        text-decoration: underline;
+    }
+
+    .block {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+</style>
+
 
 <div class="grid_10">
     <div class="box round first grid">

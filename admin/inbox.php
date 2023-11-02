@@ -22,6 +22,51 @@ if (isset($_GET['delproid'])) {
 
 }
  ?>
+ <style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .block {
+        margin: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    table td {
+        background-color: #f7f7f7;
+    }
+
+    table a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    table a:hover {
+        text-decoration: underline;
+    }
+
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+</style>
+
         <div class="grid_10">
             <div class="box round first grid">
                 <h2>Ordered</h2>

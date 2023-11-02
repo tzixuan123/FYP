@@ -12,6 +12,67 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 }
 
 ?>
+<style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form label {
+        display: block;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    .form .medium {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .form .tinymce {
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 150px;
+    }
+
+    .form select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .form input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .form input[type="submit"] {
+        background: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+
 <div class="grid_10">
     <div class="box round first grid">
         <h2>Add New Product</h2>

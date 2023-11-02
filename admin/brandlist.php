@@ -12,6 +12,66 @@ if (isset($_GET['delbrand'])) {
 }
 
 ?>
+<style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .datatable {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .datatable thead {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .datatable thead th {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .datatable tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .datatable tbody tr td {
+        padding: 10px;
+    }
+
+    .datatable tbody tr.odd.gradeX td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .datatable tbody tr.odd.gradeX:last-child td {
+        border-bottom: none;
+    }
+
+    .datatable tbody tr:hover {
+        background-color: #e0f7ff;
+    }
+
+    .datatable tbody tr:hover td {
+        transition: background-color 0.2s;
+    }
+
+    .datatable tbody tr:hover a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+</style>
+
 
         <div class="grid_10">
             <div class="box round first grid">

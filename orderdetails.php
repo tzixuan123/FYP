@@ -16,10 +16,95 @@ if (isset($_GET['customerId'])) {
 
  ?>
 
- <style>
-     .tblone tr td{text-align: justify;}
+<style>
+.order {
+    text-align: center;
+}
 
- </style>
+.order h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.order p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.order a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tblone {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.tblone th,
+.tblone td {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tblone th {
+    background-color: #333;
+    color: #fff;
+}
+
+.tblone tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tblone tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.tblone tr:first-child {
+    background-color: #333;
+}
+
+.tblone tr:first-child th {
+    border: 2px solid #333;
+}
+
+.tblone tr:last-child td {
+    border-bottom: 2px solid #ddd;
+}
+
+.tblone td img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.tblone tr td:last-child {
+    white-space: nowrap;
+}
+
+.tblone tr td:nth-child(6) {
+    min-width: 150px;
+}
+
+.tblone tr td:last-child a {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tblone tr td:last-child a:hover {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+</style>
+
  <div class="main">
     <div class="content">
     	<div class="section group">

@@ -29,6 +29,56 @@ if ($updated_row) {
 }
 
 ?>
+<style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .block {
+        margin: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    table th {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    table td {
+        background-color: #f7f7f7;
+    }
+
+    table a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    table a:hover {
+        text-decoration: underline;
+    }
+
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+
+    /* Hover effect */
+    table tr:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+
                 <div class="block">        
                     <table class="data display datatable" id="example">
 					<thead>

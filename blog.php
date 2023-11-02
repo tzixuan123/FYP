@@ -19,7 +19,9 @@
 
 
       <style>
+
     .article-container {
+        display:grid;
         margin: 0 auto; /* Center the container horizontally */
         padding: 20px; /* Add padding to the container */
        

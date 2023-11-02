@@ -85,7 +85,7 @@ $cmr = new Customer();
  <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="about.css">
 
   
       <title>Chinese Medicine</title>

@@ -28,6 +28,55 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>
+<style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .block {
+        margin: 20px;
+    }
+
+    .form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .form label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .form input[type="text"],
+    .form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .form textarea {
+        height: 150px;
+    }
+
+    .form input[type="submit"] {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form input[type="submit"]:hover {
+        background: #0056b3;
+    }
+</style>
+
 
 
                 <div class="block">               

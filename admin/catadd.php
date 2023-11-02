@@ -22,6 +22,46 @@ echo $insertCat;
 }
 
         ?>
+        <style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .block {
+        margin: 20px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .form input[type="submit"] {
+        background-color: lightblue;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form input[type="submit"]:hover {
+        background-color: grey;
+    }
+</style>
+
                  <form action="catadd.php" method="post">
                     <table class="form">					
                         <tr>

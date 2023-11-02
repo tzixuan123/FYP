@@ -95,6 +95,14 @@ $test = array_values($test);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             
         }
+        .card-header {
+            background-color: #333;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 15px;
+            font-size: 24px;
+        }
 
         .homepage-container {
             text-align: center;
@@ -122,7 +130,20 @@ $test = array_values($test);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             border-radius: 10px; /* Add rounded corners for a nicer look */
 }
+.btn-primary {
+        background-color: #007bff; /* Change the button background color */
+        color: #fff; /* Change the text color */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
+    .btn-primary:hover {
+        background-color: #0056b3; /* Change the button background color on hover */
+    }
 
         </style>
 </head>
@@ -138,7 +159,7 @@ $test = array_values($test);
                             <div class="card">
                                 <div class="card-header">
                                     
-                                    <h3><i class='bx bx-credit-card-front' ></i> View Total Sales</h3>
+                                    <h3><i class='bx bx-credit-card-front' ></i>  View Total Sales</h3>
                                 </div>
                                 <div class="card-body">
                                     <table id="example" class="table table-bordered table-striped" >
@@ -149,6 +170,8 @@ $test = array_values($test);
                                         <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
                                     </div>
                                 </div>
+                                <a href="sales_product.php" class="btn btn-primary">Go to Total Stock</a> <!-- Add a button to link to "other_page.php" -->
+
                                 
                             </div>
                         </div>

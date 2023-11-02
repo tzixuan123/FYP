@@ -35,7 +35,130 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
  
  <!--The Header was sent before executed -->
- 
+ <style>
+    .cartoption {
+        padding: 20px;
+    }
+
+    .cartpage {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .cartpage h2 {
+        font-size: 28px;
+        color: #333;
+    }
+
+    .cartpage span {
+        font-size: 18px;
+        color: red;
+    }
+
+    .tblone {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .tblone th, .tblone td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .tblone th {
+        background-color: black;
+    }
+
+    .tblone td img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .buyfield {
+        width: 50px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .buysubmit {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 5px 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .tblone input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    .tblone input[type="submit"] {
+        background-color: #ff0000;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .tblone a {
+        color: #ff0000;
+        text-decoration: none;
+    }
+
+    .tblone a:hover {
+        text-decoration: underline;
+    }
+
+    table:last-child {
+        margin-top: 20px;
+    }
+
+    table:last-child th, table:last-child td {
+        border: none;
+    }
+
+    .shopping {
+        margin-top: 20px;
+    }
+
+    .shopleft img,
+    .shopright img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .shopleft img {
+        float: left;
+    }
+
+    .shopright img {
+        float: right;
+    }
+
+    .shopleft a,
+    .shopright a {
+        display: block;
+    }
+
+    .clear {
+        clear: both;
+    }
+</style>
+
 
 
  <div class="main">

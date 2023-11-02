@@ -39,6 +39,41 @@ echo $updateBrand;
         while ($result = $getBrand->fetch_assoc()) {
     
      ?>   
+     <style>
+    .box {
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .medium {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: lightblue;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: grey;
+    }
+</style>
+
                  <form action="" method="post">
                     <table class="form">                    
                         <tr>

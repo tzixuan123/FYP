@@ -49,6 +49,101 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	?>
 
+<style>
+.support {
+    text-align: center;
+    padding: 20px;
+}
+
+.support h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.support p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.support_desc {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+.support_desc span {
+    font-weight: bold;
+}
+
+.support img {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: lightblue;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company_address {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.company_address h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.company_address a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+</style>
 
 
 
