@@ -124,6 +124,7 @@ Session::destroy();
 
                 </span></a></li>
                 <li class="ic-charts"><a href="http://localhost/shop/blog_admin/index.php"><span>Stores - Consult</span></a></li> 
+                <li class="ic-dashboard"><a href="sales.php"><span>Sales - Report</span></a></li> 
                 <li class="ic-charts"><a href="../home.php" target="_blank"><span>Visit Website</span></a></li>
             </ul>
         </div>

@@ -78,4 +78,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
  		</div>
  	</div>
 	</div>
-  <?php include 'inc/footer.php';?>
+  <?php include 'Footer.php';?>

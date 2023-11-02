@@ -1,4 +1,4 @@
-<?php include 'inc/test.php';?>
+<?php include 'inc/main.php';?>
 
 
 <?php 

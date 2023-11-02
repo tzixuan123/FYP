@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h1>Admin Login</h1>
         <form action="login.php" method="post">
             <div class="input-box">
-                <input type="text" name="adminUser" placeholder="Enter your User" required>
+                <input type="text" name="adminUser" placeholder="Enter your Username" required>
                 <i class='bx bx-user'></i>
             </div>
 
