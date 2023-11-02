@@ -1,0 +1,425 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@400;500;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(195, 100%, 30%);
+  --gradient-color: linear-gradient(90deg,
+                    hsl(210, 55%, 20%),
+                    hsl(192, 62%, 25%));
+  --title-color: hsl(210, 52%, 20%);
+  --text-color: hsl(210, 24%, 15%);
+  --white-color: #fff;
+  --body-color: hsl(210, 55%, 85%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Lora", serif;
+  --biggest-font-size: 2.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('images/img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+  
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  width: 36px;
+}
+
+.nav__toggle,
+.nav__close{
+  display: inline-flex;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Navigation for mobile devices */
+@media  screen and (max-width: 1023px) {
+  .nav__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    box-shadow: 0 1px 16px hsla(210, 55%, 24%, .1);
+    padding-block: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    transition: top .4s;
+
+  }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.nav__link{
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .75rem;
+}
+
+.nav__button-link,
+.nav__button-ghost{
+  display: inline-block;
+  color: var(--title-color);
+}
+
+.nav__button-ghost{
+  background-color: hsla(0, 0%, 100%, .3);
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--title-color);
+  border-radius: .75rem;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+
+/* Show menu */
+.show-menu{
+  top: 0;
+}
+
+/* Change background header */
+.bg-header{
+  box-shadow: 0 1px 16px hsla(210, 55%, 24%, .12);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 305px)  {
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .home__title{
+    font-size: 2rem;
+  }
+}
+
+/* For taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px){
+  .home__container{
+    padding-top: 10rem;
+  }
+  .home__images img{
+    width: 700px;
+    left: -12rem;
+  }
+  
+}
+
+/* For medium devices */
+@media screen and (min-width: 480px){
+  .home__content{
+    max-width: 305px;
+  }
+  .home__bird-2{
+    right: -3rem;
+  }
+  .home__images img{
+    width: initial;
+    left: 0;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+  .nav{
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+  .nav__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__list{
+    flex-direction: row;
+    column-gap: 5rem;
+  }
+  .nav__buttons{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+  .nav__logo{
+    width: 48px;
+  }
+  .home__content{
+    max-width: 550px;
+  }
+  .home__data{
+    row-gap: 1rem;
+  }
+  .home__subtitle{
+    font-size: var(--normal-font-size);
+  }
+  .home__description{
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1120px){
+  .container{
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .home__container{
+    height: 950px;
+    padding-top: 10rem;
+  }
+  .home__bird-1,
+  .home__bird-2{
+    width: 80px;
+  }
+  .home__bird-1{
+    bottom: -7rem;
+    left: -7rem;
+  }
+
+  .home__bird-2{
+    top: 0;
+    right: -6rem;
+  }
+  .home__images img{
+    bottom: -3rem;
+  }
+
+  ::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 15%);
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 25%);
+  }
+}
+/* For 2K resolutions (2048 x 1152) */
+
+@media screen and (min-width: 2048px ) {
+  .container{
+    max-width: 1300px;
+  }
+  .home__container{
+    height: 1200px;
+    padding-top: 15rem;
+  }
+}
+
+/* Profile Update*/
+
+.wrapper {
+  width: 420px;
+  /* Set the container to transparent */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center ;
+}
+
+.wrapper .input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color: #fff;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .btn{
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+.message{
+  text-align: center;
+  background: transparent;
+  padding: 15px 0px;
+  border:1px solid #699053;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Login Form */
+.wrapper .grey{
+  width: 100%;
+  height: 45px;
+  margin-top: 15px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
