@@ -43,10 +43,7 @@
 
       <div class="footer-brand">
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo-light.svg" width="74" height="24" alt="CMs">
-        </a>
-        <br>
+       
 
         <p class="footer-text">
           &copy; 2023 CMs. <br> All rights reserved.
@@ -64,7 +61,7 @@
 
         <li>
           <address class="footer-text"><i class='bx bx-home' ></i>
-             Moonshine St. 14/05 Light City, London, United Kingdom
+             Moonshine St. 14/05 Light City, Penang, Malaysia
           </address>
         </li>
 
@@ -107,42 +104,13 @@
 
       </ul>
 
-      <div class="footer-list">
-
-        <p class="h4 footer-list-title"> <i class='bx bx-news' ></i> Our Newsletter</p>
-
-        <p class="footer-text">
-          Subscribe to our newsletter to get our news & deals delivered to you.
-        </p>
-
-        <form action="" class="input-wrapper">
-          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-
-          <button type="submit" class="submit-btn">Join</button>
-        </form>
-
-      </div>
+      
 
     </div>
   </footer>
 </body>
 
-  <script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-	  			containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-	 		};
-			*/
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
-		});
-	</script>
-    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+  
     <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
 	  <script defer src="js/jquery.flexslider.js"></script>
 	  <script type="text/javascript">

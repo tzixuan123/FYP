@@ -742,9 +742,7 @@ $cmr = new Customer();
 
       <div class="footer-brand">
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
-        </a>
+        
 
         <p class="footer-text">
           &copy; 2022 CMs. <br> All rights reserved.
@@ -761,8 +759,8 @@ $cmr = new Customer();
         </li>
 
         <li>
-          <address class="footer-text">
-            Moonshine St. 14/05 Light City, London, United Kingdom
+          <address class="footer-text"><i class='bx bx-home' ></i>
+             Moonshine St. 14/05 Light City, Penang, Malaysia
           </address>
         </li>
 
@@ -805,21 +803,6 @@ $cmr = new Customer();
 
       </ul>
 
-      <div class="footer-list">
-
-        <p class="h4 footer-list-title"> <i class='bx bx-news' ></i>  Our Newsletter</p>
-
-        <p class="footer-text">
-          Subscribe to our newsletter to get our news & deals delivered to you.
-        </p>
-
-        <form action="" class="input-wrapper">
-          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-
-          <button type="submit" class="submit-btn">Join</button>
-        </form>
-
-      </div>
 
     </div>
   </footer>

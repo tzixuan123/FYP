@@ -53,8 +53,8 @@ if ($productName == "" || $catId == "" || $brandId == "" || $body == "" || $pric
 	
 	$msg = "<span class='error'>Fields must not be empty !</span>";
 	return $msg;
-}elseif ($file_size >1048567) {
-     echo "<span class='error'>Image Size should be less then 1MB!
+}elseif ($file_size >4194304) {
+     echo "<span class='error'>Image Size should be less then 4MB!
      </span>";
     } elseif (in_array($file_ext, $permited) === false) {
      echo "<span class='error'>You can upload only:-".implode(', ', $permited)."</span>";
@@ -150,8 +150,8 @@ if (!empty($file_name)) {
 
 
 
-if ($file_size >1048567) {
-     echo "<span class='error'>Image Size should be less then 1MB!
+if ($file_size >4194304) {
+     echo "<span class='error'>Image Size should be less then 4MB!
      </span>";
     } elseif (in_array($file_ext, $permited) === false) {
      echo "<span class='error'>You can upload only:-".implode(', ', $permited)."</span>";
@@ -263,7 +263,7 @@ WHERE p.catId = c.catId AND p.brandId = b.brandId AND p.productId = '$id'";
 }
 
 
-// Latest phone for slider //
+// Latest TCM for slider //
 public function latestFromIphone(){
 	$query = "SELECT * FROM tbl_product WHERE brandId = '4' ORDER BY productId DESC LIMIT 1";
 	$result = $this->db->select($query);

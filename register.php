@@ -20,8 +20,22 @@
 
     <link href="assets/css/register.css" rel="stylesheet">
   
+    <style>
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+  </style>
+
 </head>
 <body>
+<video autoplay muted loop id="video-background">
+    <source src="video.mp4" type="video/mp4">
+  </video>
 <?php
 
 include 'lib/Session.php';
@@ -92,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                     <i class='bx bx-phone'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" name="country" placeholder="Enter your Country" pattern="[A-Za-z]{3}" title="Three letter country code" Required>
+                    <input type="text" name="country" placeholder="Enter your Postal Code" pattern="[[0-9]{5}" title="Please enter 5 digits of postal code" Required>
                     <i class='bx bx-world'></i>
                 </div>
 

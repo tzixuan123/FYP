@@ -23,9 +23,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!--Css -->
 <link href="css/login.css" rel="stylesheet">
 
+<style>
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+  </style>
 
 </head>
 <body>
+<video autoplay muted loop id="video-background">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
 
     <div class="container">
         <div class="wrapper">
